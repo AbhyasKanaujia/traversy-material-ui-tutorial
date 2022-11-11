@@ -7,6 +7,8 @@ import Delete from "@mui/icons-material/Delete";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import TextField from "@mui/material/TextField";
+import "@fontsource/roboto";
+import Typography from "@mui/material/Typography";
 import { useState } from "react";
 
 const CheckBoxExample = () => {
@@ -32,6 +34,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Typography variant="h2">Welcome to MUI</Typography>
+        <Typography variant="subtitle1">
+          Learn how to use Material UI
+        </Typography>
+        <Typography variant="body1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ab
+          laudantium consectetur, architecto minus cumque suscipit. Quo labore
+          non vel.
+        </Typography>
         <TextField
           label="Email"
           placeholder="alex@materialui.com"
