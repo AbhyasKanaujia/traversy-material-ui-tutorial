@@ -12,6 +12,11 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Menu from "@mui/icons-material/Menu";
 import { useState } from "react";
 
 const CheckBoxExample = () => {
@@ -37,6 +42,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <AppBar color="secondary">
+          <Toolbar>
+            <Menu />
+            <Typography variant="h6">MUI Theming</Typography>
+          </Toolbar>
+          <Button variant="filled">Icon</Button>
+        </AppBar>
         <Container maxWidth="md">
           <Typography variant="h2">Welcome to MUI</Typography>
           <Typography variant="subtitle1">
