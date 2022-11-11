@@ -6,6 +6,7 @@ import Save from "@mui/icons-material/Save";
 import Delete from "@mui/icons-material/Delete";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
+import TextField from "@mui/material/TextField";
 import { useState } from "react";
 
 const CheckBoxExample = () => {
@@ -31,6 +32,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <TextField
+          label="Email"
+          placeholder="alex@materialui.com"
+          type="email"
+        />
         <CheckBoxExample />
         <ButtonGroup>
           <Button
